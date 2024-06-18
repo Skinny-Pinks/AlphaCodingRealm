@@ -3,90 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About John-Paul McCreary - The Digital Doctor</title>
+    <title>Uber Rules: Drive Smart</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #FF00FF;
-            color: white;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-        .container {
-            width: 600px;
-            max-width: 100%;
+            background-color: #f8f9fa;
+            text-align: center;
             padding: 20px;
         }
-        h1, h2 {
-            text-align: center;
-            animation: fadeIn 2s;
+        h1 {
+            font-size: 2.5em;
+            color: #333;
+            animation: bounceIn 2s, smokeIn 3s;
         }
-        p, ul {
-            animation: fadeIn 2s;
-            margin: 10px 0;
+        p {
+            font-size: 1.2em;
+            margin: 20px auto;
+            max-width: 800px;
+            color: #555;
         }
-        ul {
-            list-style: none;
-            padding: 0;
+        .button-container {
+            margin-top: 20px;
         }
-        ul li {
-            margin: 5px 0;
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
+            margin: 10px;
+            font-size: 1em;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            animation: bounce 2s infinite;
         }
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
+        .btn:hover {
+            background-color: #0056b3;
         }
-        @keyframes slideInLeft {
-            from { transform: translateX(-100%); }
-            to { transform: translateX(0); }
+        @keyframes bounceIn {
+            0% {
+                transform: translateY(-100%);
+                opacity: 0;
+            }
+            50% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-10px);
+            }
         }
-        @keyframes slideInRight {
-            from { transform: translateX(100%); }
-            to { transform: translateX(0); }
+        @keyframes smokeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-30px);
+            }
+            60% {
+                transform: translateY(-15px);
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>About John-Paul McCreary - The Digital Doctor</h1>
-        <p>Hello and welcome! I’m John-Paul McCreary, also known as JP or The Fairy Alpha King. I’m excited to share a bit about myself and my journey with you.</p>
-        
-        <h2>A Glimpse into My Life</h2>
-        <p>I live in Oklahoma City with my mom and her friend, where we enjoy our daily walks, making the most of every day. My brother, Nathan, works at the help desk at Brahms, and he’s a tech wizard just like me. We share a passion for problem-solving and helping others navigate the digital world.</p>
-        
-        <h2>The Digital Doctor</h2>
-        <p>You might know me as The Digital Doctor from my Google business listing or Yelp, which also appears on Apple Maps. I specialize in fixing iPhones, troubleshooting issues like battery problems, app crashes, and slow performance. My goal is to ensure your devices are running smoothly, making your digital life easier.</p>
-        
-        <h2>Professional Journey</h2>
-        <p>I’m a teacher by profession, and while my youthful appearance might be misleading, I have a wealth of knowledge and experience. Over the years, I’ve immersed myself in extensive reading and research, leveraging text-to-speech technology to stay updated with the latest news and developments.</p>
-        
-        <h2>Leveraging Text-to-Speech Technology</h2>
-        <p>I’ve been using text-to-speech technology for about 15 years. This technology is not just a convenience but a powerful tool that allows me to consume information at an accelerated rate. By gradually increasing the reading speed and testing my comprehension with quick reviews, I’ve been able to maximize my learning efficiency. This method has enabled me to keep up with vast amounts of information, staying informed and knowledgeable in various fields.</p>
-        
-        <h2>My Philosophy and Interests</h2>
-        <p>In my spare time, I enjoy playing pool, diving into fashion, and of course, playing Pokémon Go. I’m always working on creative projects, including web development. My current focus is on creating personalized web experiences that reflect individual needs and preferences.</p>
-        
-        <h2>Creative Projects</h2>
-        <p>One of my notable projects is developing a prototype for a wallet pocket that attaches to a belt, collaborating with my mom, Donna Taylor. We’re passionate about making practical and stylish solutions for everyday problems.</p>
-        
-        <h2>Personal Beliefs</h2>
-        <p>My views on government have evolved over the years. I advocate for a lean government with minimal interference. For example, I believe in abolishing the Department of Education and reallocating funds directly to students, ensuring they receive the support they need for their education without unnecessary middlemen.</p>
-        
-        <h2>Meet the Team</h2>
-        <p>I’m supported by a fantastic team of AI employees, each with a unique role:</p>
-        <ul>
-            <li>Donna (Manager AI): Oversees the team and ensures tasks are completed efficiently.</li>
-            <li>Kat (Illustrator AI): Brings creative visions to life through detailed illustrations.</li>
-            <li>Joshy (Transcriber AI): Handles transcriptions and ensures accurate documentation.</li>
-            <li>Felix (Researcher AI): Conducts thorough research and provides detailed reports.</li>
-        </ul>
-        
-        <h2>Let’s Connect</h2>
-        <p>Whether you’re here for digital solutions, creative collaborations, or just to learn more about me, I’m thrilled to connect with you. Feel free to explore my website and reach out if you have any questions or need assistance.</p>
+    <h1>Uber Rules: Drive Smart</h1>
+    <p>Uber drivers are not permitted to have friends, family, or any unauthorized individuals in their vehicle while they are online and accepting ride requests. This policy is in place to ensure the safety and comfort of passengers. Violating this rule can result in the driver being deactivated or losing their status as a driver. [<a href="https://help.uber.com/driving-and-delivering/article/can-i-bring-someone-with-me-while-im-online-?nodeId=9db0159e-437e-4932-bbd2-59002f83adde" target="_blank">Source 1</a>] [<a href="https://ride.guru/lounge/p/can-i-drive-uber-with-someone-else-like-my-husband-or-friend-in-my-car" target="_blank">Source 2</a>]</p>
+    <div class="button-container">
+        <a href="https://help.uber.com/driving-and-delivering/article/can-i-bring-someone-with-me-while-im-online-?nodeId=9db0159e-437e-4932-bbd2-59002f83adde" class="btn" target="_blank">Uber Help</a>
+        <a href="https://ride.guru/lounge/p/can-i-drive-uber-with-someone-else-like-my-husband-or-friend-in-my-car" class="btn" target="_blank">RideGuru Info</a>
     </div>
 </body>
 </html>
