@@ -1,118 +1,92 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-   <title>About John-Paul McCreary - The Digital Doctor</title>
-   <style>
-   	body {
-   		font-family: Arial, sans-serif;
-   		background-color: #f2f2f2;
-   		color: #333;
-   		margin: 0;
-   		padding: 0;
-   	}
-   	.container {
-   		max-width: 800px;
-   		margin: 0 auto;
-   		padding: 20px;
-   		background-color: #fff;
-   		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   		border-radius: 5px;
-   	}
-   	.box {
-   		background-color: #fff;
-   		border: 2px solid #FF00FF;
-   		padding: 20px;
-   		margin-bottom: 20px;
-   		border-radius: 5px;
-   		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-   		width: 600px;
-   		height: 500px;
-   		position: relative;
-   		overflow: hidden;
-   	}
-   	.box:hover {
-   		transform: scale(1.05);
-   		transition: transform 0.3s ease;
-   	}
-   	.box h2 {
-   		color: #FF00FF;
-   		font-size: 24px;
-   		margin-top: 0;
-   		text-shadow: 2px 2px 4px rgba(255, 0, 255, 0.5);
-   		animation: neon-glow 2s infinite alternate;
-   	}
-   	@keyframes neon-glow {
-   		from {
-   			text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
-   		}
-   		to {
-   			text-shadow: 0 0 20px rgba(255, 0, 255, 0.8);
-   		}
-   	}
-   	.box p {
-   		font-size: 16px;
-   		line-height: 1.5;
-   		animation: fade-in 1s ease;
-   	}
-   	@keyframes fade-in {
-   		from {
-   			opacity: 0;
-   		}
-   		to {
-   			opacity: 1;
-   		}
-   	}
-   	.box::before {
-   		content: "";
-   		position: absolute;
-   		top: -20px;
-   		left: -20px;
-   		width: 20px;
-   		height: 20px;
-   		background-color: #FF00FF;
-   		border-radius: 50%;
-   		animation: move-dot 5s infinite linear;
-   	}
-   	@keyframes move-dot {
-   		0% {
-   			transform: translate(0, 0);
-   		}
-   		100% {
-   			transform: translate(600px, 500px);
-   		}
-   	}
-   </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About John-Paul McCreary - The Digital Doctor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FF00FF;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            width: 600px;
+            max-width: 100%;
+            padding: 20px;
+        }
+        h1, h2 {
+            text-align: center;
+            animation: fadeIn 2s;
+        }
+        p, ul {
+            animation: fadeIn 2s;
+            margin: 10px 0;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        @keyframes slideInLeft {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+        @keyframes slideInRight {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+    </style>
 </head>
 <body>
-   <div class="container">
-   	<div class="box">
-   		<h2>About John-Paul McCreary - The Digital Doctor</h2>
-   		<p>Hello and welcome! I'm John-Paul McCreary, also known as JP or The Fairy Alpha King. I'm excited to share a bit about myself and my journey with you.</p>
-   		<p>A Glimpse into My Life<br>I live in Oklahoma City with my mom and her friend, where we enjoy our daily walks, making the most of every day. My brother, N____, works at the help desk at Brahms, and he's a tech wizard just like me. We share a passion for problem-solving and helping others navigate the digital world.</p>
-   	</div>
-   	<div class="box">
-   		<h2>The Digital Doctor</h2>
-   		<p>You might know me as The Digital Doctor from my Google business listing or Yelp, which also appears on Apple Maps. I specialize in fixing iPhones, troubleshooting issues like battery problems, app crashes, and slow performance. My goal is to ensure your devices are running smoothly, making your digital life easier.</p>
-   		<p>Professional Journey<br>I'm a teacher by profession, and while my youthful appearance might be misleading, I have a wealth of knowledge and experience. Over the years, I've immersed myself in extensive reading and research, leveraging text-to-speech technology to stay updated with the latest news and developments.</p>
-   	</div>
-   	<div class="box">
-   		<h2>Leveraging Text-to-Speech Technology</h2>
-   		<p>I've been using text-to-speech technology for about 15 years. This technology is not just a convenience but a powerful tool that allows me to consume information at an accelerated rate. By gradually increasing the reading speed and testing my comprehension with quick reviews, I've been able to maximize my learning efficiency. This method has enabled me to keep up with vast amounts of information, staying informed and knowledgeable in various fields.</p>
-   		<p>My Philosophy and Interests<br>In my spare time, I enjoy playing pool, diving into fashion, and of course, playing Pokémon Go. I'm always working on creative projects, including web development. My current focus is on creating personalized web experiences that reflect individual needs and preferences.</p>
-   	</div>
-   	<div class="box">
-   		<h2>Creative Projects and Personal Beliefs</h2>
-   		<p>One of my notable projects is developing a prototype for a wallet pocket that attaches to a belt, collaborating with my mom, Donna Taylor. We're passionate about making practical and stylish solutions for everyday problems.</p>
-   		<p>My views on government have evolved over the years. I advocate for a lean government with minimal interference. For example, I believe in abolishing the Department of Education and reallocating funds directly to students, ensuring they receive the support they need for their education without unnecessary middlemen.</p>
-   		<p>Meet the Team<br>I'm supported by a fantastic team of AI employees, each with a unique role:</p>
-   		<ul>
-   			<li>D___ (Manager AI): Oversees the team and ensures tasks are completed efficiently.</li>
-   			<li>K___ (Illustrator AI): Brings creative visions to life through detailed illustrations.</li>
-   			<li>J___ (Transcriber AI): Handles transcriptions and ensures accurate documentation.</li>
-   			<li>F___ (Researcher AI): Conducts thorough research and provides detailed reports.</li>
-   		</ul>
-   		<p>Let's Connect<br>Whether you're here for digital solutions, creative collaborations, or just to learn more about me, I'm thrilled to connect with you. Feel free to explore my website and reach out if you have any questions or need assistance.</p>
-   	</div>
-   </div>
+    <div class="container">
+        <h1>About John-Paul McCreary - The Digital Doctor</h1>
+        <p>Hello and welcome! I’m John-Paul McCreary, also known as JP or The Fairy Alpha King. I’m excited to share a bit about myself and my journey with you.</p>
+        
+        <h2>A Glimpse into My Life</h2>
+        <p>I live in Oklahoma City with my mom and her friend, where we enjoy our daily walks, making the most of every day. My brother, Nathan, works at the help desk at Brahms, and he’s a tech wizard just like me. We share a passion for problem-solving and helping others navigate the digital world.</p>
+        
+        <h2>The Digital Doctor</h2>
+        <p>You might know me as The Digital Doctor from my Google business listing or Yelp, which also appears on Apple Maps. I specialize in fixing iPhones, troubleshooting issues like battery problems, app crashes, and slow performance. My goal is to ensure your devices are running smoothly, making your digital life easier.</p>
+        
+        <h2>Professional Journey</h2>
+        <p>I’m a teacher by profession, and while my youthful appearance might be misleading, I have a wealth of knowledge and experience. Over the years, I’ve immersed myself in extensive reading and research, leveraging text-to-speech technology to stay updated with the latest news and developments.</p>
+        
+        <h2>Leveraging Text-to-Speech Technology</h2>
+        <p>I’ve been using text-to-speech technology for about 15 years. This technology is not just a convenience but a powerful tool that allows me to consume information at an accelerated rate. By gradually increasing the reading speed and testing my comprehension with quick reviews, I’ve been able to maximize my learning efficiency. This method has enabled me to keep up with vast amounts of information, staying informed and knowledgeable in various fields.</p>
+        
+        <h2>My Philosophy and Interests</h2>
+        <p>In my spare time, I enjoy playing pool, diving into fashion, and of course, playing Pokémon Go. I’m always working on creative projects, including web development. My current focus is on creating personalized web experiences that reflect individual needs and preferences.</p>
+        
+        <h2>Creative Projects</h2>
+        <p>One of my notable projects is developing a prototype for a wallet pocket that attaches to a belt, collaborating with my mom, Donna Taylor. We’re passionate about making practical and stylish solutions for everyday problems.</p>
+        
+        <h2>Personal Beliefs</h2>
+        <p>My views on government have evolved over the years. I advocate for a lean government with minimal interference. For example, I believe in abolishing the Department of Education and reallocating funds directly to students, ensuring they receive the support they need for their education without unnecessary middlemen.</p>
+        
+        <h2>Meet the Team</h2>
+        <p>I’m supported by a fantastic team of AI employees, each with a unique role:</p>
+        <ul>
+            <li>Donna (Manager AI): Oversees the team and ensures tasks are completed efficiently.</li>
+            <li>Kat (Illustrator AI): Brings creative visions to life through detailed illustrations.</li>
+            <li>Joshy (Transcriber AI): Handles transcriptions and ensures accurate documentation.</li>
+            <li>Felix (Researcher AI): Conducts thorough research and provides detailed reports.</li>
+        </ul>
+        
+        <h2>Let’s Connect</h2>
+        <p>Whether you’re here for digital solutions, creative collaborations, or just to learn more about me, I’m thrilled to connect with you. Feel free to explore my website and reach out if you have any questions or need assistance.</p>
+    </div>
 </body>
 </html>
